@@ -1,0 +1,1 @@
+# java -jar /usr/local/bin/embulk.jar guess seed.yml
