@@ -1,8 +1,16 @@
 # frozen_string_literal: true
 
 require_relative "oruka/version"
+require "oruka/configuration"
 
 module Oruka
-  class Error < StandardError; end
-  # Your code goes here...
+  class << self
+    def config
+      @config ||= Configuration.new
+    end
+
+    def configure
+      yield config
+    end
+  end
 end
