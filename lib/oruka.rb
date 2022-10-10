@@ -2,6 +2,7 @@
 
 require_relative "oruka/version"
 require "oruka/configuration"
+require "oruka/builder"
 
 module Oruka
   class << self
