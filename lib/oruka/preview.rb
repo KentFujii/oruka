@@ -1,0 +1,1 @@
+# java -jar /usr/local/bin/embulk.jar preview
